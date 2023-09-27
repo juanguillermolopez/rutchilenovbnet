@@ -18,7 +18,7 @@
 'Diseñado por: Guillermo.
 'Año: 2023.
 'Estudiente de segundo año de Ing. Inf. 
-'Intituto IPP.
+'Instituto IPP.
 'Chile.
 '
 'Solo escribe para saber si te sirvió a:
@@ -86,7 +86,7 @@ Public Class Rut
         Try
             Return _rut(0) <> "0"
         Catch ex As Exception
-
+            Return Faslse
         End Try
     End Function
 
@@ -95,7 +95,7 @@ Public Class Rut
         Try
             Return _rut(_rut.Length - 2) = "-"
         Catch ex As Exception
-
+            Return Faslse
         End Try
     End Function
 
