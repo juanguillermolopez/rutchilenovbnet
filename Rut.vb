@@ -3,7 +3,7 @@
 'ya sea en formulario o consola
 'instanciar como sigue:
 
-'Dim r = New Rut(txtrut.Text)
+'Dim r = New Rut(txtrut.Text.ToUpper)
 '-----------------------------
 'If r.validarRutCompleto Then
 '.....MsgBox("Rut válido")
@@ -73,7 +73,7 @@ Public Class Rut
     Public Sub New(r As String)
         'constructor con parámetros
         'entrega el valor a la varible local
-        _rut = r.Trim.Length
+        _rut = r.Trim
     End Sub
 
     Public Function tieneLongitudCorrecta() As Boolean
@@ -131,7 +131,7 @@ Public Class Rut
 
             ''
             If dv = 10 Then
-                resultado = "k"
+                resultado = "K"
             ElseIf dv = 11 Then
                 resultado = "0"
             Else
