@@ -67,9 +67,7 @@ Public Class Rut
         ' constructor por defecto
     End Sub
 
-    'rut de ejemplos para pruebas
-    '12487521-8
-    '10214564-K
+  
     Public Sub New(r As String)
         'constructor con parámetros
         'entrega el valor a la varible local
